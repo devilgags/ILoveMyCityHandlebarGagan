@@ -38,5 +38,5 @@ exports.city=function(req,res){
       title:title,
       headline:headline,
       city:cityName,
-      imageArray:imageArray);
+      imageArray:imageArray});
   }
