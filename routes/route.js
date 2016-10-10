@@ -1,6 +1,7 @@
 exports.home=function(req,res){
   res.render('home',{title:'iLoveMyCity',
-                    headline:'Everyone believes that every city have something to say'
+                    headline:'Everyone believes that every city have something to say',
+                    port:process.env.PORT
                     });
                   }
 
@@ -37,5 +38,5 @@ exports.city=function(req,res){
       title:title,
       headline:headline,
       city:cityName,
-      imageArray:imageArray});
+      imageArray:imageArray);
   }
